@@ -80,6 +80,6 @@ jobs:
   deploy:
     run-on: self-hosted
     steps:
-      run: |
-        docker run -it walouiji/site-hexa
       - name: Deploy
+        run: |
+          docker run -it walouiji/site-hexa
