@@ -77,3 +77,9 @@ jobs:
           push: true
           tags: |
             walouiji1/site-hexa:${{ steps.prep.outputs.version }}
+  deploy:
+    run-on: self-hosted
+    steps:
+      - name: Deploy
+        run: |
+          docker run -it walouiji/site-hexa
