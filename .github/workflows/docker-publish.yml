@@ -76,4 +76,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            Walouiji/site-hexa:${{ steps.prep.outputs.version }}
+            walouiji/site-hexa:${{ steps.prep.outputs.version }}
