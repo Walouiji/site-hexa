@@ -83,4 +83,4 @@ jobs:
     steps:
       - name: Deploy
         run: |
-          docker run -d walouiji1/site-hexa
+          docker run -d -e VIRTUAL_HOST=github.${{ secrets.DOCKER_IP }} walouiji1/site-hexa 
