@@ -82,4 +82,4 @@ jobs:
     steps:
       - name: Deploy
         run: |
-          docker run -d walouiji/site-hexa
+          docker run -d walouiji1/site-hexa
