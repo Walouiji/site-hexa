@@ -79,6 +79,7 @@ jobs:
             walouiji1/site-hexa:${{ steps.prep.outputs.version }}
   deploy:
     runs-on: self-hosted
+    needs: push
     steps:
       - name: Deploy
         run: |
